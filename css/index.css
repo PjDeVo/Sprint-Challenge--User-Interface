@@ -322,16 +322,9 @@ footer nav a {
   display: flex;
   flex-direction: column;
   justify-items: start;
-}
-
-.strategy {
   margin-right: 25px;
   border-bottom: 1px dashed black;
-}
-
-.how-we-work {
-  margin-left: 25px;
-  border-bottom: 1px dashed black;
+  margin-top: 20px;
 }
 
 .info button {
@@ -345,12 +338,63 @@ footer nav a {
   margin-bottom: 20px;
 }
 
+.info button:hover {
+  background-color: cadetblue;
+  transition: 1s;
+  left: 0;
+}
+
 .info h1 {
   margin-top: 20px;
 }
 
-.top-half {
+.top-half,
+.bottom-half {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.send-off {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  background-color: gray;
+  padding: 20px;
+}
+
+input[type="submit"] {
+  justify-self: start;
+  width: 200px;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: red;
+  color: white;
+}
+
+input[type="text"],
+select {
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  font-size: 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+  border-radius: 10px;
+  border: 1px solid darkgray;
 }
